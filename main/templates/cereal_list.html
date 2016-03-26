@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{%block body %}
+
+<div class = "container">
+
+	<div class="row">
+
+	{% for cerealall in cerealeverything %}
+
+	   <h1> {{manufacturer.name}} </h1>
+
+	   <hr class="tagline-divider">
+
+	   		{% for cerealall in manufacturername.cereal_set.all %}
+
+	       <h2> {{cereal.name}} </h2>
+
+	   {% endfor %}
+	
+	</div>
+	
+</div>
+
+{% endblock %}
